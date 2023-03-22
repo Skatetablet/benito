@@ -45,13 +45,13 @@ public class ListOrdenes extends javax.swing.JFrame {
 
         tbOrdenes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "# de Orden", "Fecha", "Total Orden"
+                "# de Orden", "Fecha", "Total Orden", "Estado", "fechaActualizada"
             }
         ));
         jScrollPane1.setViewportView(tbOrdenes);
@@ -131,10 +131,11 @@ public class ListOrdenes extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnProveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnEliminar)
-                    .addComponent(btnAgregar)
-                    .addComponent(btnInicio))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnAgregar)
+                        .addComponent(btnInicio)))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
